@@ -35,13 +35,26 @@ button {
     max-width: 140px;
 }
 
-.header, .content1, .footer{
-    background-color: #1F2937;
-    color: #f9faf8;
-    font-size: 18px
+img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #3882F6;
+    border-radius: 10%;
 }
 
-.content1 .left, a {
+.header, 
+.content1, 
+.footer {
+    background-color: #1F2937;
+    color: #f9faf8;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.content1 .left, 
+a {
     color: #e5e7eb;
 }
 
@@ -51,26 +64,26 @@ button {
 }
 
 .header {
-    display: flex;
     justify-content: space-around;
-    flex: 1;
-    align-items: center;
+
 }
 
 .content1 {
-    display:flex;
     justify-content: space-evenly;
-    align-items: center;
-    flex: 1;
     gap: 10px;
+}
+
+.content1 .left, 
+.content1 .right {
+    display: flex;
+    margin: 80px 0;
 }
 
 .content1 .left {
     width: 500px;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 10px
+    gap: 10px;
 }
 
 #awesome {
@@ -78,12 +91,75 @@ button {
     font-weight: bolder;
 }
 
-.content1 .right{
+.content1 .right {
     width: 550px;
     height: 217px;
     background-color: grey;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+.content2, 
+.content3 {
+    color: #1f2937;
+}
+
+.content2, 
+.quote-container {
+    margin-bottom: 80px;
+}
+
+.card-container, 
+.content3, 
+.quote-container {
+    display: flex;
+    justify-content: center;
+}
+
+.info-header, 
+.quote-text {
+    font-size: 36px;
+}
+
+.content2 {
+    margin-top: 40px;
+}
+
+.info-header {
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 16px ;
+}
+
+.card-container {
+    gap: 40px
+}
+
+.card {
+    font-size: 12px;
+    max-width: 120px;
+    text-align: center;
+}
+
+.content3 {
+    background-color: #E5E7EB;
+}
+
+.quote-container {
+    margin-top: 100px;
+    max-width: 850px;
+    flex-direction: column;
+}
+
+.quote-text {
+    margin-bottom: 10px;
+    text-align: left;
+    font-style: italic;
+}
+
+.quote-sign { 
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: bold;
+}
